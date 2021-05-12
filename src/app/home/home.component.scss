@@ -34,6 +34,7 @@
   .navbar-brand{
     font-size: 25px;
     color: rgb(255, 255, 255);
+    margin-top: 0.3em;
     ;
   }
 
@@ -84,7 +85,8 @@
   
   }
   .button:hover {
-    background: #06D85F;
+    background: #d80696;
+    color: white;
   }
   
   .overlay {
@@ -129,7 +131,7 @@
     color: #333;
   }
   .popup .close:hover {
-    color: #06D85F;
+    color: #d806b5;
   }
   .popup .content {
     max-height: 30%;
@@ -166,8 +168,8 @@
     margin-left: 110px;
   }
   .sidenav {
-    height: 100%;
-    width: 160px;
+    height: fit-content;
+    
     position: fixed;
     z-index: 1;
     margin-top: 50;
@@ -176,18 +178,23 @@
     overflow-x: hidden;
     padding-top: 10px;
     color: black;
+    border-right: 4px solid rgb(201, 25, 201);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-right: 5rem;
   }
   
   .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
+    color: rgb(0, 0, 0);
     display: block;
+    margin: 15px;
+
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #ffffff;
   }
   
   .main {
@@ -198,15 +205,57 @@
   
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
   }
 
   .homebox{
 
     margin: 0 auto;
     background: transparent;
-    padding: 35px;
     border: transparent;
     background-clip: padding-box;
     text-align: center;
+    font-size: 25px;
+    width: fit-content;
+    height: fit-content;
   }
+
+  .linebar div{
+    height:4px;
+    background-color: rgb(201, 25, 201);
+    margin: 5px 0;
+    border-radius: 25px;
+}
+
+.linebar{
+    width: 30px;
+    display: block;
+    margin: 1em 0 0 1em;
+    float:left;
+    border: transparent;
+    background:transparent;
+}
+.linebar + .nav{
+  margin-left: 20px;
+}
+.one{
+    width: 30px;
+}
+.two{
+    width: 20px;
+}
+.three{
+    width: 25px;
+}
+
+.nav:hover div{
+    width: 30px;
+}
+body{
+  // width: 100%;
+  height: 100vh;
+      background-image: url("/assets/images/background.png");
+      -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}

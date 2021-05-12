@@ -11,5 +11,7 @@ export class ViewinfraComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  linebar() {
 
+  }
 }
