@@ -1,261 +1,261 @@
 
 .btn-default {
-    font-family: Raleway-SemiBold;
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    letter-spacing: 1px;
-    line-height: 15px;
-    border: 2px solid rgba(108, 89, 179, 0.75);
-    border-radius: 40px;
-    background-color: rgb(233, 57, 218);
-    transition: all 0.3s ease 0s;
-  }
-  .sys {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px #363636;
+  font-family: Raleway-SemiBold;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  line-height: 15px;
+  border: 2px solid rgba(108, 89, 179, 0.75);
+  border-radius: 40px;
+  background-color: rgb(233, 57, 218);
+  transition: all 0.3s ease 0s;
+}
+.sys {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px #363636;
 
-  }
-  .navbar{
-      background:transparent;
-      border: transparent;
-  }
-  body{
-    // width: 100%;
-    height: 100vh;
-       // background-image: url("https://www.cyberera.com.ng/wp-content/uploads/2020/05/New-TMobile-750x450.png");
-        -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-  }
-  
-  .navbar-brand{
-    font-size: 25px;
-    color: rgb(255, 255, 255);
-    margin-top: 0.3em;
-    ;
-  }
-
-  .line{
-      width: 85%;
-      border-width: 90%;
-      border-top-width: thick;
-      border-top-left-radius: 1em;
-      border-bottom-left-radius: 1em;
-      border-top-right-radius: 1em;
-      border-bottom-right-radius: 1em;
-      border-color: rgb(201, 25, 201);
-
-  }
-  
-  .container-fluid{
-      width: 85%;
-      margin-top: 3%;
-  }
-
-
-  h1 {
-    text-align: center;
-    font-family: Tahoma, Arial, sans-serif;
-    color: #06D85F;
-    margin: 80px 0;
-  }
-  
-  .box {
-    width: 40%;
-    margin: 0 auto;
-    background: transparent;
-    padding: 35px;
-    border: transparent;
-    border-radius: 20px/50px;
-    background-clip: padding-box;
-    text-align: center;
-  }
-  
-  .button {
-    font-size: 1em;
-    padding: 15px;
-    color: #fff;
-    border: 2px solid #d806b5;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-  
-  }
-  .button:hover {
-    background: #d80696;
-    color: white;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-  }
-  
-  .popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
-  }
-  .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-  }
-  .popup .close:hover {
-    color: #d806b5;
-  }
-  .popup .content {
-    max-height: 30%;
-    overflow: auto;
-  }
-  
-  @media screen and (max-width: 700px){
-    .box{
-      width: 70%;
-    }
-    .popup{
-      width: 70%;
-    }
-  }
-  .content{
-      text-align: center;
-  }
-
-  ng-sidebar-container{
-    height: 100vh;
-    padding: 35px;
-    margin-left: 110px;
-    
-  }
-
-  ::ng-deep .ng-sidebar {
-    background-color: rgb(139, 119, 130);
-    width: 300px;
-    padding: 2em 3em;
-    box-shadow: 0 0 2.5em rgba(85,85,85,0.5);
-    background: transparent;
-  }
-  .sidebarbutton{
-    margin-left: 110px;
-  }
-  .sidenav {
-    height: fit-content;
-    
-    position: fixed;
-    z-index: 1;
-    margin-top: 50;
-    margin-left: 7%;
+}
+.navbar{
     background:transparent;
-    overflow-x: hidden;
-    padding-top: 10px;
-    color: black;
-    border-right: 4px solid rgb(201, 25, 201);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding-right: 5rem;
-  }
-  
-  .sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    display: block;
-    margin: 15px;
-
-  }
-  
-  .sidenav a:hover {
-    color: #ffffff;
-  }
-  
-  .main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-  }
-
-  .homebox{
-
-    margin: 0 auto;
-    background: transparent;
     border: transparent;
-    background-clip: padding-box;
-    text-align: center;
-    font-size: 25px;
-    width: fit-content;
-    height: fit-content;
-  }
-
-  .linebar div{
-    height:4px;
-    background-color: rgb(201, 25, 201);
-    margin: 5px 0;
-    border-radius: 25px;
-}
-
-.linebar{
-    width: 30px;
-    display: block;
-    margin: 1em 0 0 1em;
-    float:left;
-    border: transparent;
-    background:transparent;
-}
-.linebar + .nav{
-  margin-left: 20px;
-}
-.one{
-    width: 30px;
-}
-.two{
-    width: 20px;
-}
-.three{
-    width: 25px;
-}
-
-.nav:hover div{
-    width: 30px;
 }
 body{
   // width: 100%;
   height: 100vh;
-      background-image: url("/assets/images/background.png");
+     // background-image: url("https://www.cyberera.com.ng/wp-content/uploads/2020/05/New-TMobile-750x450.png");
       -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;
 }
+
+.navbar-brand{
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+  margin-top: 0.3em;
+  ;
+}
+
+.line{
+    width: 85%;
+    border-width: 90%;
+    border-top-width: thick;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-color: rgb(201, 25, 201);
+
+}
+
+.container-fluid{
+    width: 85%;
+    margin-top: 3%;
+}
+
+
+h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06D85F;
+  margin: 80px 0;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: transparent;
+  padding: 35px;
+  border: transparent;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 15px;
+  color: #fff;
+  border: 2px solid #d806b5;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+}
+.button:hover {
+  background: #d80696;
+  color: white;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #d806b5;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+.content{
+    text-align: center;
+}
+
+ng-sidebar-container{
+  height: 100vh;
+  padding: 35px;
+  margin-left: 110px;
+  
+}
+
+::ng-deep .ng-sidebar {
+  background-color: rgb(139, 119, 130);
+  width: 300px;
+  padding: 2em 3em;
+  box-shadow: 0 0 2.5em rgba(85,85,85,0.5);
+  background: transparent;
+}
+.sidebarbutton{
+  margin-left: 110px;
+}
+.sidenav {
+  height: fit-content;
+  
+  position: fixed;
+  z-index: 1;
+  margin-top: 50;
+  margin-left: 7%;
+  background:transparent;
+  overflow-x: hidden;
+  padding-top: 10px;
+  color: black;
+  border-right: 4px solid rgb(201, 25, 201);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-right: 5rem;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  display: block;
+  margin: 15px;
+
+}
+
+.sidenav a:hover {
+  color: #ffffff;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+
+.homebox{
+
+  margin: 0 auto;
+  background: transparent;
+  border: transparent;
+  background-clip: padding-box;
+  text-align: center;
+  font-size: 25px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.linebar div{
+  height:4px;
+  background-color: rgb(201, 25, 201);
+  margin: 5px 0;
+  border-radius: 25px;
+}
+
+.linebar{
+  width: 30px;
+  display: block;
+  margin: 1em 0 0 1em;
+  float:left;
+  border: transparent;
+  background:transparent;
+}
+.linebar + .nav{
+margin-left: 20px;
+}
+.one{
+  width: 30px;
+}
+.two{
+  width: 20px;
+}
+.three{
+  width: 25px;
+}
+
+.nav:hover div{
+  width: 30px;
+}
+// body{
+//   // width: 100%;
+//   height: 100vh;
+//       background-image: url("/assets/images/background.png");
+//       -webkit-background-size: cover;
+//    -moz-background-size: cover;
+//    -o-background-size: cover;
+//    background-size: cover;
+// }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ViewinfraService } from './viewinfra.service';
 
 @Component({
   selector: 'app-viewinfra',
@@ -7,11 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewinfraComponent implements OnInit {
 
-  constructor() { }
+  servers = [];
+  prodData = [];
+  constructor(private dataService: ViewinfraService) { }
+  
+  ngOnInit() {
 
-  ngOnInit(): void {
-  }
-  linebar() {
+    this.dataService.prodData().subscribe((data: any[])=>{
+      console.log(data);
+      this.prodData = data;
+    })
 
+    this.dataService.serversData().subscribe((data: any[])=>{
+      console.log(data);
+      this.servers = data;
+    })  
   }
+
 }

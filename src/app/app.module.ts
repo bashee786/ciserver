@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarModule } from 'ng-sidebar';
 import { ViewinfraComponent } from './viewinfra/viewinfra.component';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { ViewinfraComponent } from './viewinfra/viewinfra.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SidebarModule
+    SidebarModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

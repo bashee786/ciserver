@@ -23,6 +23,20 @@
             <a class="button" href=""> BIF</a>
             <a class="button" href=""> SPQA</a>
     </div>
+
+    <table>
+        <thead>
+            <th>Change Control</th>
+            <th>Used For</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of prodData">
+                <td>{{data.dvChangeControl}}</td>
+                <td>{{data.dvClassification}}</td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 
 </html>
