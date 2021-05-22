@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home',
@@ -7,12 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route : Router) { }
 
   ngOnInit(): void {
   }
-opened = false;
-toggleSidebar(){
-  this.opened = !this.opened;
-}
+  opened = false;
+  toggleSidebar() {
+    this.opened = !this.opened;
+  }
+  viewinfra() {
+   $("#viewinfrapopup").modal("show");
+    
+  }
 }

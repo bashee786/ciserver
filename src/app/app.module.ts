@@ -8,6 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { SidebarModule } from 'ng-sidebar';
 import { ViewinfraComponent } from './viewinfra/viewinfra.component';
 import { HttpClientModule } from '@angular/common/http';
+import * as $ from "jquery";
+
 @NgModule({
   declarations: [
     AppComponent,

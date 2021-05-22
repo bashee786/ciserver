@@ -6,6 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ViewinfraService {
 
+  private modals: any[] = [];
+
   url = 'http://localhost:8090/api/server/data';
     
     prodUrl = 'http://localhost:8090/api/server/data/Production';
@@ -31,4 +33,15 @@ export class ViewinfraService {
     stagingData(){
         return this.http.get(this.stagingUrl);
     }
+  //   open(id: string) {
+  //     // open modal specified by id
+  //     let modal: any = this.modals.filter(x => x.id === id)[0];
+  //     modal.open();
+  // }
+
+  // close(id: string) {
+  //     // close modal specified by id
+  //     let modal: any = this.modals.filter(x => x.id === id)[0];
+  //     modal.close();
+  // }
 }
