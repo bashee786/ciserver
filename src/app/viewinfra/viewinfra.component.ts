@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ViewinfraService } from './viewinfra.service';
 
 
@@ -13,7 +14,8 @@ export class ViewinfraComponent implements OnInit {
   bodyText: string;
   servers = [];
   prodData = [];
-  constructor(private dataService: ViewinfraService) { }
+  constructor(private dataService: ViewinfraService,
+  @Inject(MAT_DIALOG_DATA) public dataFromHome) { }
   
   ngOnInit() {
 
@@ -37,4 +39,3 @@ export class ViewinfraComponent implements OnInit {
 // closeModal(id: string) {
 //     this.dataService.close(id);
 // }
-

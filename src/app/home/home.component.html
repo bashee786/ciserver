@@ -1,6 +1,7 @@
 <html>
 
 <body>
+
     <nav class="navbar navbar-default">
         <div class="container-fluid">
             <div class="collaps navbar-collaps">
@@ -25,7 +26,10 @@
 
     <div class="sidenav">
         <div class="homebox">
-            <button type="button"  ḍata-toggle="modal" data-target="#viewinfrapopup"> ViewInfra</button>
+            <!-- opens another component -->
+            <a class="button" (click)="openDialog()"> ViewInfra</a>
+            <!-- opens modal within the component u -->
+            <a class="button" (click)="viewInfra()"> Modal</a>
             <a class="button" href=""> Monitoring</a>
             <a class="button" href=""> CICD</a>
             <a class="button" href=""> Alerting</a>
@@ -39,23 +43,25 @@
            </button>
        </div>
    </ng-sidebar-container> -->
-   <div class="modal fade" id="viewinfrapopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="float-right mr-1">
-                <button  style="background-color: blue; color: white; padding: 5px 5px;" type="button" class="close " data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-            </div>
-            <div class="modal-body">
-                <h3 class="text-success">hhhh</h3>
-                
+    <div class="modal fade" id="viewinfrapopup" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">HEADER</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <p>BODY</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </body>
-
-<!-- <div class="card-body table-wrap"> -->
 
 </html>

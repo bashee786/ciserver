@@ -7,21 +7,25 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#" class="navbar-brand" style="color: rgb(0, 0, 0);">Infrastructure Details</a></li>
                 </ul>
-            </div> 
+            </div>
             <form class="nav navbar-nav navbar-right">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
-             </form>
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            </form>
         </div>
     </nav>
     <hr class="line">
     <br>
+    <div class="data" style="border: 1px rgb(77, 177, 211) solid;">
+        <h2>Data from HOME component:</h2>
+        <h4>{{dataFromHome.content}}</h4>
+    </div>
     <div class="sidenav">
-            <a class="button" href="#" target="_self"> Business Services</a>
-            <a class="button" href=""> CCID</a>
-            <a class="button" href=""> ACMS</a>
-            <a class="button" href=""> BIF</a>
-            <a class="button" href=""> SPQA</a>
+        <a class="button" href="#" target="_self"> Business Services</a>
+        <a class="button" href=""> CCID</a>
+        <a class="button" href=""> ACMS</a>
+        <a class="button" href=""> BIF</a>
+        <a class="button" href=""> SPQA</a>
     </div>
 
     <table>
@@ -50,10 +54,10 @@
 <jw-modal id="custom-modal-1">
     <h1>A Custom Modal!</h1>
     <!-- <p>Home page text: <input type="text" [(ngModel)]="bodyText" /></p> -->
-    <!-- <button (click)="closeModal('custom-modal-1');">Close</button>
+<!-- <button (click)="closeModal('custom-modal-1');">Close</button>
 </jw-modal>
 
 <jw-modal id="custom-modal-2">
     <h1 style="height:1000px">A Tall Custom Modal!</h1>
     <button (click)="closeModal('custom-modal-2');">Close</button>
-</jw-modal> --> 
+</jw-modal> -->

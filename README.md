@@ -25,3 +25,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+(remove below content)
+## Reason for jquery not working:
+Check angular.json
+	- previoulsy there is a js file inside styles which is not correct. Only style sheets should be inside styles array.
+	- And in scripts array there were no files. But jquery and bootstrap js files should be there [added now].
+
+### For your reference I am attaching images here. Delete after clearing your doubt.
+
+#### angular.json[OLD]
+- ![](old.png)
+
+#### angular.json [new]
+
+![](new.png)
